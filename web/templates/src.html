@@ -1,0 +1,36 @@
+$def with (src, err)
+
+<link rel="stylesheet" href="/static/styles/idea.css">
+<link rel="stylesheet" href="/static/mystyle.css">
+<script src="/static/javascript/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<form method="POST" enctype="multipart/form-data" action="">
+<input type="file" name="myfile" /><input type="submit" />
+</form>
+
+
+<style>
+*{margin:0;padding:0;}
+.parent{width:auto;}
+.top{width:994px; height:25px; clear:both;}
+.top .marginleft{width:200px; float:left;}
+.top .left{float:left;height:25px;width:300px;}
+.top .right{width:440px;height:25px;float:right;}
+</style>
+
+<div class="parent">
+  <div class="top">
+    <div class="left">
+        <h2>Source Code:</h2>
+        <pre><code class="tiger">$src</code></pre>
+    </div>
+    <div class="right">
+        <h2>Error Message</h2>
+        <br />
+        $ if err:
+            $for e in err:
+                <span style="color:red">&nbsp;&nbsp;$e</span> <br />
+    </div>
+  </div>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html><head>
+    <title>AST TREE</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> 
+    
+    <link rel="stylesheet" type="text/css" href="/static/homepagefiles/bootstrap.css">
+
+    <link rel="stylesheet" href="/static/styles/idea.css">
+    <link rel="stylesheet" href="/static/mystyle.css">
+    <script src="/static/javascript/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="/static/homepagefiles/elegant-press.css" type="text/css">
+    <link href="/static/homepagefiles/bootstrap-responsive.css" rel="stylesheet">
+   
+
+    <script type="text/javascript" src="/static/homepagefiles/jquery-1.js"></script>	
+    <script type="text/javascript" src="/static/homepagefiles/stupidtable.js"></script>
+
+    
+
+    <script type="text/javascript" src="/static/homepagefiles/home.js"></script>
+     <script type="text/javascript" src="/static/homepagefiles/bootstrap.js"></script>
+<!--    <script src="/static/js/elegant-press.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" type="text/css" href="/static/homepagefiles/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <h1><a href="http://demo.namron.org/">Tiger Compiler</a></h1>
+       <!--  <p id="tagline"><strong>Database Lab</strong></p> -->
+
+    </header>
+
+    <div id="content">
+        <div class="main-container">
+            <div id="sub-headline">
+                <div class="tagline_left">
+                    <p id="tagline2"><strong>Authors:</strong>
+                       <a href="mailto:11300240049@fudan.edu.cn" title="11300240049@fudan.edu.cn">单张卿</a><strong>|</strong>
+                       <a href="mailto:11300240068@fudan.edu.cn" title="11300240068@fudan.edu.cn">牙河清</a>
+                    </p>
+                </div>
+                <div class="tagline_right">
+                    <form method="POST" enctype="multipart/form-data" action="/upload">
+                    <fieldset>
+                            <legend>Upload SourceCode</legend>
+                            <input type="file" name="myfile" /><input type="submit" name="go" id="go" value="upload"/>
+                    </fieldset>
+                    </form>
+
+                </div>
+                <br class="clear">
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div id="nav-container">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="/">Submit SourceCode</a></li>
+                        <li><a href="/static/netast.html">View AST Tree</a></li>
+                        <li><a href="/static/symbol.html">View Symbol Tree</a></li>
+                        
+                    </ul>
+                </nav>
+                <!-- <div class="clear"></div> -->
+            </div>
+
+            <div class="main-container">
+                <div class="container1">
+                                    <div class="parent">
+                                      <div class="top">
+                                        <style type="text/css">
+                                            .node {
+                                            cursor: pointer;
+                                          }
+                                          .overlay{
+                                              background-color:#EEE;
+                                          }
+                                          .node circle {
+                                            fill: #fff;
+                                            stroke: steelblue;
+                                            stroke-width: 1.5px;
+                                          }
+                                          .node text {
+                                            font-size:10px; 
+                                            font-family:sans-serif;
+                                          }                                           
+                                          .link {
+                                            fill: none;
+                                            stroke: #ccc;
+                                            stroke-width: 1.5px;
+                                          }
+                                          .templink {
+                                            fill: none;
+                                            stroke: red;
+                                            stroke-width: 3px;
+                                          }
+                                          .ghostCircle.show{
+                                              display:block;
+                                          }
+                                          .ghostCircle, .activeDrag .ghostCircle{
+                                               display: none;
+                                          }
+                                        </style>
+                                        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+                                        <script src="http://d3js.org/d3.v3.min.js"></script>
+                                        <script src="ast.js"></script>
+                                        <h2>Symbol Tree</h2> This Page displays the AST tree of the last successfully compiled sourcefile. <br/>
+                                        you can use mouse wheel to zoom in / zoom out<br />
+                                        Please use <span style="color:red;">ctrl + F5</span> to clear the <span style="color:red;">cache</span>.<br /><br />
+                                        <div id="tree-container" style="height:600px;overflow:hidden;border: 1px dotted black;"></div>
+                                      </div>
+                                      </div>
+                    <br>
+                    <br>
+                            
+                        
+                        
+					
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+            <div class="callout">
+                <div class="calloutcontainer">
+                    <div class="container_12">
+                        <div class="grid">
+
+                        
+                            <article class="footbox">
+                                <h2>Techniques We Have Applied</h2>
+                                <ul>
+                                    <li><a href="https://www.djangoproject.com">Python Django</a><br>Django: The Web framework for perfectionists with deadlines
+                                    </li>
+                                    <li><a href="http://twitter.github.io/bootstrap/">Bootstrap</a><br>Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+                                    </li>
+                                    <li><a href="#">HTML5+CSS3+jQuery</a><br>The advanced web developing tools
+                                    </li>
+                                </ul>
+                            </article>
+                        
+
+                        
+                            <article class="footbox last">
+                                <h2>Download&Thanks</h2>
+                                <div id="social">
+                                    <a href="http://twitter.com/priteshgupta" class="s3d twitter">Source Code<span class="icons twitter"></span></a>
+                                  <!--   <a href="http://www.facebook.com/priteshgupta" class="s3d facebook">Report<span class="icons facebook"></span></a> -->
+                                    <a href="http://forrst.com/people/priteshgupta" class="s3d forrst">Report<span class="icons forrst"></span></a>
+                                   <!--  <a href="http://www.flickr.com/photos/priteshgupta" class="s3d flickr">Flickr <span class="icons flickr"></span></a> -->
+                                    <a href="#" class="s3d designmoo">Dev Tools<span class="icons designmoo"></span></a>
+                                </div>
+                            </article>
+                        
+
+                        
+                            <article class="latestgallery">
+                                <h2>Latest Work</h2>
+                                <ul>
+                                    <li><a href="/static/homepagefiles/thumb.jpg" data-gal="prettyPhoto[gallery]" title="Title">
+                                        <img src="/static/homepagefiles/thumb.jpg" alt="" width="150" height="95"></a></li>
+                                    <li><a href="/static/homepagefiles/thumb2.jpg" data-gal="prettyPhoto[gallery]" title="Title">
+                                        <img src="/static/homepagefiles/thumb2.jpg" alt="" width="150" height="95"></a></li>
+                                    <li><a href="/static/homepagefiles/thumb3.jpg" data-gal="prettyPhoto[gallery]" title="Title">
+                                        <img src="/static/homepagefiles/thumb3.jpg" alt="" width="150" height="95"></a></li>
+                                    <li><a href="/static/homepagefiles/thumb4.jpg" data-gal="prettyPhoto[gallery]" title="Title">
+                                        <img src="/static/homepagefiles/thumb4.jpg" alt="" width="150" height="95"></a></li>
+                                </ul>
+                            </article>
+                        
+
+                            <div class="clear"></div>
+                        </div>
+                        <div class="calloutoverlay"></div>
+                        <div class="calloutoverlaybottom"></div>
+                    </div>
+                </div>
+            </div>
+        <!--  -->
+
+        <footer id="footer">
+                <p class="tagline_left">Copyright &copy; 2014 - All Rights Reserved <a href="#">单张卿&牙河清</a></p>
+                <p class="tagline_right">Design by <a href="http://www.priteshgupta.com/" title="Pritesh Gupta" target="_blank">PriteshGupta.com</a></p>
+                <br/><br/>
+            </footer>
+    </div>
+</body>
+
+ 
+</html>
